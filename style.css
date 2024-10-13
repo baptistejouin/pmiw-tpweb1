@@ -1,8 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Labrada&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper {
+  padding: 0 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__nav {
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 96px;
+  margin-bottom: 2.5rem;
+}
+
+.header__subtitle {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+.header__paragraph {
+  margin-bottom: 2.5rem;
+  max-width: 875px;
+}
+h1,
+h2 {
+  font-family: "Labrada", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+button {
+  all: unset;
+}
+button:not(.icon) {
+  border: 1px solid #000;
+  font-family: "Labrada", serif;
+  font-family: 24px;
+  padding: 0.5rem 4rem;
+  border-radius: 0.75rem;
+}
+
+button:hover {
+  cursor: pointer;
 }
