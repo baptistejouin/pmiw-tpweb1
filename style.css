@@ -5,14 +5,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
+  background-color: #fffdfb;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .wrapper {
   padding: 0 2rem;
 }
@@ -28,7 +32,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 75%;
+  justify-content: center;
 }
+
+.header__content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header__nav {
   padding-block: 2rem;
   display: flex;
@@ -44,10 +57,12 @@ body {
   font-size: 36px;
   margin-bottom: 1rem;
 }
+
 .header__paragraph {
   margin-bottom: 2.5rem;
   max-width: 875px;
 }
+
 h1,
 h2 {
   font-family: "Labrada", serif;
@@ -55,13 +70,17 @@ h2 {
   font-weight: 400;
   font-style: normal;
 }
+
 button {
   all: unset;
 }
+
 button:not(.icon) {
   border: 1px solid #000;
   font-family: "Labrada", serif;
-  font-family: 24px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
   padding: 0.5rem 4rem;
   border-radius: 0.75rem;
 }
@@ -109,7 +128,8 @@ button:hover {
   margin-right: 3rem;
 }
 
-.theme, .impact {
+.theme,
+.impact {
   margin-bottom: 5rem;
 }
 
@@ -143,6 +163,7 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
+
 .stats__info {
   font-family: "Labrada", serif;
   display: flex;
@@ -159,6 +180,67 @@ button:hover {
   font-size: 2.5rem;
 }
 
-.impact .stats {
+.stats {
   align-items: flex-start;
+}
+
+a {
+  color: inherit;
+}
+
+footer {
+  color: #7b7b7b;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Labrada", serif;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 72px;
+  }
+
+  .header__subtitle {
+    font-size: 24px;
+  }
+
+  .header__paragraph {
+    font-size: 16px;
+  }
+
+  .albums img {
+    width: 275px;
+    height: 275px;
+  }
+
+  .theme__grid,
+  .impact__grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .impact__grid {
+    flex-direction: column-reverse;
+  }
+
+  .stats {
+    align-items: center;
+  }
+
+  .stats__info > p {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 0.875rem;
+  }
 }
